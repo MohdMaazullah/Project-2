@@ -1,0 +1,169 @@
+/* Global Reset */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+    background: #4B4F54; /* Deep grey background */ 
+    color: #e0e0e0; /* Light gray for contrast */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    overflow: hidden; 
+} 
+ 
+.container { 
+    width: 400px; 
+    background: #1e1e1e; /* Dark gray for cards */ 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Subtle shadow */ 
+    text-align: center; 
+} 
+ 
+h1 { 
+    font-size: 2rem; 
+    color: #81d4fa; /* Cyan highlight */ 
+    margin-bottom: 20px; 
+} 
+ 
+h3 { 
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    color: #b0bec5; /* Soft gray */ 
+} 
+ 
+.balance { 
+    margin: 20px 0; 
+    text-align: center; 
+    color: #e0e0e0; /* Neutral light text */ 
+} 
+ 
+.income-expense { 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 20px 0; 
+    background: #212121; /* Slightly lighter gray */ 
+    padding: 15px; 
+    border-radius: 15px; 
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4); /* Inner shadow */ 
+} 
+ 
+.money { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+} 
+ 
+.money.positive { 
+    color: #66bb6a; /* Green for income */ 
+} 
+ 
+.money.negative { 
+    color: #ef5350; /* Red for expense */ 
+} 
+ 
+.history { 
+    margin-top: 20px; 
+    text-align: left; 
+} 
+ 
+.history h3 { 
+    margin-bottom: 10px; 
+    color: #b0bec5; /* Gray headings */ 
+} 
+ 
+.list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    max-height: 150px; 
+    overflow-y: auto; 
+} 
+ 
+.list li { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #292929; /* Lighter dark background */ 
+    padding: 10px 15px; 
+    margin: 5px 0; 
+    border-radius: 10px; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Elevated look */ 
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: #cfd8dc; /* Softer gray text */ 
+} 
+ 
+.list li:hover { 
+    background: #333333; /* Slightly brighter on hover */ 
+    transform: scale(1.02); 
+    transition: all 0.2s ease-in-out; 
+} 
+ 
+.btn { 
+    background: linear-gradient(135deg, #3949ab, #1e88e5); /* Blue gradient */ 
+    color: #ffffff; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    width: 100%; 
+    transition: all 0.3s ease; 
+} 
+ 
+.btn:hover { 
+    background: linear-gradient(135deg, #1e88e5, #3949ab); /* Reverse gradient */ 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Soft glow */ 
+    transform: translateY(-2px); 
+} 
+ 
+.add-transaction { 
+    margin-top: 20px; 
+    text-align: left; 
+} 
+ 
+label { 
+    font-weight: 500; 
+    display: block; 
+    margin-bottom: 5px; 
+    color: #b0bec5; /* Neutral gray text */ 
+} 
+ 
+input { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    color: #e0e0e0; /* Light gray input text */ 
+    background: #212121; /* Darker background for input */ 
+    outline: none; 
+    transition: all 0.2s ease; 
+} 
+ 
+input:focus { 
+    border-color: #81d4fa; /* Cyan border highlight */ 
+    box-shadow: 0 0 8px rgba(129, 212, 250, 0.5); /* Cyan glow */ 
+} 
+ 
+::-webkit-scrollbar { 
+    width: 8px; 
+} 
+ 
+::-webkit-scrollbar-thumb { 
+    background: #81d4fa; /* Cyan scrollbar */ 
+    border-radius: 10px; 
+} 
+ 
+::-webkit-scrollbar-track { 
+    background: #333; 
+} 
